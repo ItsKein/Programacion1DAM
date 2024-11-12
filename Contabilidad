@@ -1,0 +1,29 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class Contabilidad_Casa {
+
+	public static void main(String[] args) {
+		// Inicia un array con 20 numeros enteros desde el comienzo. Debes decir cuales son cero, positivo o negativo
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		int num1=0, num2=0,num3=0;
+		float[] numeros = {23, 0, -5, 0, -56, -33, 45, 56, 45, 0, 0 ,0 ,1, -23, 67, 68, 12, 85, 19, 0};
+		
+		for (int i=0; i<numeros.length; i++) {
+			if (numeros[i]==0) {
+			num1++;
+			}
+			if (numeros[i]<0) {
+			num2++;
+			}
+			if (numeros[i]>0) {
+			num3++;
+			}
+		}
+		System.out.println("El número de veces que aparece el número 0 es "+ num1);
+		System.out.println("El número de veces que aparece un número negativo es "+ num2);
+		System.out.println("El número de veces que aparece un número positivo es "+ num3);
+	}
+
+}
