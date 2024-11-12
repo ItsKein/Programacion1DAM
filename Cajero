@@ -1,0 +1,151 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class Cajero_Casa {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+				
+		
+		double precio, devolucion, pago;
+		int cent1=0, cent2=0, cent5=0, cent10=0, cent20=0, cent50=0, eu1=0, eu2=0, bill5=0, bill10=0, bill20=0, bill50=0, bill100=0, bill200=0, bill500=0;
+		
+		System.out.println("Indica el precio de la compra.");
+		precio=scanner.nextDouble();
+		
+		
+		do { 
+			System.out.println("¿Cuanto dinero te dan?");
+			pago=scanner.nextInt();
+		} while (pago<precio);
+		
+		devolucion=pago-precio;	
+		System.out.println("Las vueltas son: "+ devolucion);
+		
+		while (devolucion>500) {
+			bill500++;
+			devolucion-=500;
+		}
+		while (devolucion>200) {
+			bill200++;
+			devolucion-=200;
+		}
+		while (devolucion>100) {
+			bill100++;
+			devolucion-=100;
+		}
+		while (devolucion>50) {
+			bill50++;
+			devolucion-=50;
+		}
+		while (devolucion>20) {
+			bill20++;
+			devolucion-=20;
+		}
+		while (devolucion>10) {
+			bill10++;
+			devolucion-=10;
+		}
+		while (devolucion>5) {
+			bill5++;
+			devolucion-=5;
+		}
+		while (devolucion>2) {
+			eu2++;
+			devolucion-=2;
+		}
+		while (devolucion>1) {
+			eu1++;
+			devolucion-=1;
+		}
+		while (devolucion>0.50) {
+			cent50++;
+			devolucion-=0.50;
+		}
+		while (devolucion>0.20) {
+			cent20++;
+			devolucion-=0.20;
+		}
+		while (devolucion>0.10) {
+			cent10++;
+			devolucion-=0.10;
+		}
+		while (devolucion>0.05) {
+			cent5++;
+			devolucion-=0.05;
+		}
+		while (devolucion>0.02) {
+			cent2++;
+			devolucion-=0.02;
+		}
+		while (devolucion>0.01) {
+			cent1++;
+			devolucion-=0.01;
+		}
+		
+		System.out.println("Este es el cambio:");
+		
+		while (bill500>0) {
+			System.out.println("Billetes de 500 usados: "+ bill500);
+			bill500=0;
+		}
+		while (bill200>0) {
+			System.out.println("Billetes de 200 usados: "+ bill200);
+			bill200=0;
+		}
+		while (bill100>0) {
+			System.out.println("Billetes de 100 usados: "+ bill100);
+			bill100=0;
+		}
+		while (bill50>0) {
+			System.out.println("Billetes de 50 usados: "+ bill50);
+			bill50=0;
+		}
+		while (bill20>0) {
+			System.out.println("Billetes de 20 usados: "+ bill20);
+			bill20=0;
+		}
+		while (bill10>0) {
+			System.out.println("Billetes de 10 usados: "+ bill10);
+			bill10=0;
+		}
+		while (bill5>0) {
+			System.out.println("Billetes de 5 usados: "+ bill5);
+			bill5=0;
+		}
+		while (eu2>0) {
+			System.out.println("Monedas de 2 usadas: "+ eu2);
+			eu2=0;
+		}
+		while (eu1>0) {
+			System.out.println("Monedas de 1 usadas: "+ eu1);
+			eu1=0;
+		}
+		while (cent50>0) {
+			System.out.println("Monedas de 50 centimos usadas: "+ cent50);
+			cent50=0;
+		}
+		while (cent20>0) {
+			System.out.println("Monedas de 20 centimos usadas: "+ cent20);
+			cent20=0;
+		}
+		while (cent10>0) {
+			System.out.println("Monedas de 10 centimos usadas: "+ cent10);
+			cent10=0;
+		}
+		while (cent5>0) {
+			System.out.println("Monedas de 5 centimos usadas: "+ cent5);
+			cent5=0;
+		}
+		while (cent2>0) {
+			System.out.println("Monedas de 2 centimos usadas: "+ cent2);
+			cent2=0;
+		}
+		while (cent1>0) {
+			System.out.println("Monedas de 1 centimos usadas: "+ cent1);
+			cent1=0;
+		}
+		
+	}
+
+}
