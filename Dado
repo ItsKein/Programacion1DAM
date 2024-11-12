@@ -1,0 +1,51 @@
+package yoquese;
+import java.util.Scanner;
+import java.util.Random;
+public class Dado {
+
+	public static void main(String[] args) {
+		// Tira un dado 1000 veces en un array y visualiza el porcentaje
+		
+		Scanner scanner = new Scanner(System.in);
+		Random random = new Random();
+		
+		float[] dado = new float [] {1, 2, 3, 4, 5, 6};
+		double aux1=0, aux2=0, aux3=0, aux4=0, aux5=0, aux6=0;
+		double porcent1=1, porcent2=1, porcent3=1, porcent4=1, porcent5=1, porcent6=1;
+		for (int i=0; i<1000; i++) {
+			int aleatorio = random.nextInt(6) + 1;
+			
+			if (aleatorio==1) {
+				aux1++;
+			}
+			if (aleatorio==2) {
+				aux2++;
+			}
+			if (aleatorio==3) {
+				aux3++;
+			}
+			if (aleatorio==4) {
+				aux4++;
+			}
+			if (aleatorio==5) {
+				aux5++;
+			}
+			if (aleatorio==6) {
+				aux6++;
+			}
+		}
+		porcent1=((aux1/1000)*100);
+		System.out.println("El número 1 ha salido un total de "+ aux1+ " veces con un porcentaje de "+ porcent1);
+		porcent2=((aux2/1000)*100);
+		System.out.println("El número 2 ha salido un total de "+ aux2+ " veces con un porcentaje de "+ porcent2);
+		porcent3=((aux3/1000)*100);
+		System.out.println("El número 3 ha salido un total de "+ aux3+ " veces con un porcentaje de "+ porcent3);
+		porcent4=((aux4/1000)*100);
+		System.out.println("El número 4 ha salido un total de "+ aux4+ " veces con un porcentaje de "+ porcent4);
+		porcent5=((aux5/1000)*100);
+		System.out.println("El número 5 ha salido un total de "+ aux5+ " veces con un porcentaje de "+ porcent5);
+		porcent6=((aux6/1000)*100);
+		System.out.println("El número 6 ha salido un total de "+ aux6+ " veces con un porcentaje de "+ porcent6);
+	}
+
+}
