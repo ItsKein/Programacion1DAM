@@ -5,6 +5,7 @@ public class Dado {
 
 	public static void main(String[] args) {
 		// Tira un dado 1000 veces en un array y visualiza el porcentaje
+		//array
 		
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
