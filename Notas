@@ -1,0 +1,47 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class Notas_Casa {
+
+public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+		int numAlum, sobreMed=0, bajoMed=0;
+		float acumulador=0, notMax, notMin;
+		numAlum=scanner.nextInt();
+		float[] notas = new float [numAlum];
+
+		for (int i=0; i<numAlum; i++) {
+			System.out.println("Escribe la nota del alumno número " + (i+1) + ":" );
+			notas[i]=scanner.nextFloat();
+			acumulador=acumulador+notas[i];
+			}
+			
+		float notMed = acumulador/numAlum;
+		System.out.println("La nota media es: "+ notMed);
+		
+		
+		notMax=notas[0];
+		notMin=notas[0];
+		for (int i=0; i<numAlum; i++) {
+			
+			if (notas[i]>notMax) {
+				notMax=notas[i];
+			}
+			if (notas[i]<notMin) {
+				notMin=notas[i];
+			}
+			if (notas[i]<notMed) {
+				bajoMed++;
+			}
+			if (notas[i]>notMed) {
+				sobreMed++;
+			}
+		}
+		System.out.println("La nota máxima es: "+ notMax);
+		System.out.println("La nota mínima es: "+ notMin);
+		System.out.println("Los alumnos sobre la media son: "+ sobreMed);
+		System.out.println("Los alumnos por debajo de la media son: "+ bajoMed);
+	}
+
+}
