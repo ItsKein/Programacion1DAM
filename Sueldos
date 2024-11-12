@@ -1,0 +1,38 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class Sueldos_Casa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		int cum, mayor, menor, media, acumulador;
+		cum=0;
+		mayor=0;
+		menor=0;
+		media=0;
+		acumulador=0;
+		
+		while (cum != -1) {
+			System.out.println("Escribe la cantidad de sueldos. Si deseas dejar de escribir, escriba -1");
+			cum=scanner.nextInt();
+			if (cum>mayor) 
+			{
+				mayor=cum;
+			} 
+			if (cum<menor && cum != -1 || menor==0) 
+			{
+				menor=cum;
+			}
+			
+			media=media+cum;
+			acumulador++;
+
+	} 
+		System.out.println("El mayor sueldo es:"+ mayor);
+		System.out.println("El menor sueldo es:"+ menor);
+		media=(media+1)/(acumulador-1);
+		System.out.println("La media de los sueldos es:"+ media);
+	}
+}
