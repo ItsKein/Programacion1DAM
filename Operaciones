@@ -1,0 +1,33 @@
+package hacer_en_casa;
+
+public class Operaciones_Casa {
+
+	public static int suma (int a, int b) {
+		return a+b;
+	}
+	public static int resta (int a, int b) {
+		return a-b;
+		
+	}
+	public static int multiplicacion (int a, int b) {
+		return a*b;
+	}
+	public static int division (int a, int b) {
+		return a/b;
+	}
+	public static double potencia(int a, int b) {
+		double c=1;
+		for (int i=0; i<0; i++) {
+			c*=a;
+		}
+		return c;
+	}
+	public static int absoluto (int a) {
+		return a=-a;
+	}
+	public static int modulo (int a, int b) {
+
+		return a%b;
+	}
+	
+}
