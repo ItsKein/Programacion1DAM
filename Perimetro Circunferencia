@@ -1,0 +1,22 @@
+package hacer_en_casa;
+
+import java.util.Scanner;
+
+public class PerimetroCricunferencia_Casa {
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		double pi=3.1416, radio, perimetro;
+		
+		System.out.println("Introduce el radio de la circunferencia:");
+		radio=scanner.nextInt();
+		
+		perimetro=(2*pi)*radio;
+		
+		System.out.println("El perimetro de la circunferencia es: "+ perimetro);
+
+	}
+
+}
