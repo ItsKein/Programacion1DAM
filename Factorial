@@ -1,0 +1,18 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class Factoriales {
+	
+	public static void main(String[] args) {
+		double num, factorial;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introduce un número y se calculará el factorial del mismo: ");
+		num = scanner.nextDouble();
+		factorial = 1;
+		while (num>0) {
+			factorial = (factorial*num);
+			num = (num-1);
+		}
+		System.out.println("El factorial es "+factorial);		
+	}
+
+}
