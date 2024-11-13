@@ -1,0 +1,53 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class NumerosAmigos {
+
+		public static void main(String[] args) {	
+			
+			Scanner scanner = new Scanner(System.in);
+			
+			System.out.println("Escribe el primer número: ");
+			int a = scanner.nextInt();
+			System.out.println("Escribe el segundo número: ");
+			int b = scanner.nextInt();
+			
+			int i=0, sumaA=0, sumaB=0;  
+			
+			
+			System.out.println("Divisores de "+ a);
+			
+			while(i < a) {
+				i++;
+				while( (a%i) != 0) {  
+					i++;
+				}
+				if (i != a) {   
+					System.out.println(i);		
+	                sumaA+=i; 
+				}	
+			}
+		i=0; 
+		
+		System.out.println("Divisores de "+ b);
+		
+			while(i<b) {	
+				i++;
+				while( (b%i) != 0) {	
+				i++;
+				}
+				if(i != b) {
+				System.out.println(i);
+	            sumaB+=i;
+				}	
+			}	
+		
+		if ( (sumaA==b) && (sumaB==a) ) { 
+			System.out.println("Los números " + a + " y "+ b + " son amigos.");	
+		} else {	
+				System.out.println("Los números " + a +" y " + b +" no son amigos.");
+			}
+		
+
+		}
+
+	}
