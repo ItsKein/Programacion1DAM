@@ -1,0 +1,40 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class Jubilacion {
+
+public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		int diaA, mesA, annoA;
+		int d, m, a;
+		System.out.println("Introduce La fecha actual (D/M/A):");
+		diaA = scanner.nextInt();
+		mesA = scanner.nextInt();
+		annoA = scanner.nextInt();
+		
+		System.out.println("Introduce tu fecha de nacimiento (D/M/A):");
+		d = scanner.nextInt();
+		m = scanner.nextInt();
+		a = scanner.nextInt();
+		if (annoA-a > 65) {
+			System.out.println("Jubilado");
+		
+		} else if (annoA-a == 65) {
+			if (mesA < m) {
+			System.out.println("Jubilado");
+		
+		} else {
+				if (mesA == m) {
+					if (diaA <= d) { 
+						System.out.println("Jubilado");
+				} else {
+						System.out.println("No Jubilado");
+					}
+				}
+			}
+		} else {
+			System.out.println("No Jubilado");
+		}
+		
+	}
+}
