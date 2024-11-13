@@ -1,0 +1,22 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		int num=0,a=0,b=1;
+		System.out.println("¿Cuántos números quieres ver de Fibonacci?");
+		num = scanner.nextInt();
+		System.out.print(a+","+b);
+		for (int i=2;i<num;i++) {
+			int suma=a+b;
+			System.out.print(","+suma);
+			a=b;
+			b=suma;
+		} 
+	}
+
+}
+
