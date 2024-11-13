@@ -1,0 +1,54 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class FechaCorrecta {
+	
+	public static void main(String[] args) {
+		
+		        int a, b, c;
+		        Scanner scanner = new Scanner(System.in);
+		        System.out.print("Introduce el día: ");
+		        a = scanner.nextInt();
+		        System.out.print("Introduce el mes: ");
+		        b = scanner.nextInt();
+		        System.out.print("Introduce el año: ");
+		        c = scanner.nextInt();
+		        if (b < 1 || b > 12) {
+		            System.out.println("Fecha Incorrecta");
+		        } else {
+		            if (b == 4 || b == 6 || b == 9 || b == 11) {
+		                if (a <= 30) {
+		                    System.out.println("Fecha correcta");
+		                } else {
+		                    System.out.println("Fecha Incorrecta");
+		                }
+		            } else {
+		                if (b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12) {
+		                    if (a <= 31) {
+		                        System.out.println("Fecha correcta");
+		                    } else {
+		                        System.out.println("Fecha Incorrecta");
+		                    }
+		                } else {
+		                    if (b == 2) {
+		                        if ((c % 4 == 0 && c % 100 != 0) || (c % 400 == 0)) {
+		                            if (a <= 29) {
+		                                System.out.println("Fecha correcta");
+		                            } else {
+		                                System.out.println("Fecha Incorrecta");
+		                            }
+		                        } else {
+		                            if (a <= 28) {
+		                                System.out.println("Fecha correcta");
+		                            } else {
+		                                System.out.println("Fecha Incorrecta");
+		                            }
+		                        }
+		                    } else {
+		                        System.out.println("Fecha Incorrecta");
+		                    }
+		                }
+		            }
+		        }
+		    }
+	}
+
