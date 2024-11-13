@@ -11,7 +11,7 @@ public class NumerosAmigos {
 			System.out.println("Escribe el segundo número: ");
 			int b = scanner.nextInt();
 			
-			int i=0, sumaA=0, sumaB=0;  
+			int i=0, acumA=0, acumB=0;  
 			
 			
 			System.out.println("Divisores de "+ a);
@@ -23,7 +23,7 @@ public class NumerosAmigos {
 				}
 				if (i != a) {   
 					System.out.println(i);		
-	                sumaA+=i; 
+	                acumA+=i; 
 				}	
 			}
 		i=0; 
@@ -37,11 +37,11 @@ public class NumerosAmigos {
 				}
 				if(i != b) {
 				System.out.println(i);
-	            sumaB+=i;
+	            acumB+=i;
 				}	
 			}	
 		
-		if ( (sumaA==b) && (sumaB==a) ) { 
+		if ( (acumA==b) && (acumB==a) ) { 
 			System.out.println("Los números " + a + " y "+ b + " son amigos.");	
 		} else {	
 				System.out.println("Los números " + a +" y " + b +" no son amigos.");
@@ -51,3 +51,4 @@ public class NumerosAmigos {
 		}
 
 	}
+
