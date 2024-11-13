@@ -1,0 +1,76 @@
+package hacer_en_casa;
+
+public class formas {
+
+	public static void main(String[] args) {
+		String asteriscos;
+		int vueltas, bloques, compara;
+		asteriscos = "*";
+		vueltas = 0;
+		while (vueltas <= 5) {
+			System.out.print(asteriscos);
+			vueltas++;
+		}
+		System.out.println();
+		System.out.println("--------------------");
+		vueltas = 0;
+		bloques = 0;
+		compara = 0;
+		while (bloques < 6) {
+			vueltas = 0;
+			while (vueltas < compara) {
+				System.out.print(asteriscos);
+				vueltas++;
+			}
+			System.out.println();
+			bloques++;
+			compara++;
+
+		}
+		System.out.println("--------------------");
+		vueltas = 4;
+		bloques = 0;
+		compara = 0;
+		while (bloques < 5) {
+			while (vueltas >= compara) {
+				System.out.print(asteriscos);
+				vueltas--;
+			}
+			System.out.println();
+			bloques++;
+			vueltas = 4 - bloques;	
+		}
+		System.out.println("--------------------");
+		vueltas = 0;
+		bloques = 0;
+		compara = 0;
+		
+		while (bloques < 6) {
+			vueltas = 0;
+			while (vueltas < compara) {
+				System.out.print(asteriscos);
+				vueltas++;
+			}
+			System.out.println();
+			bloques++;
+			compara++;
+
+		}
+		vueltas = 5;
+		bloques = 0;
+		compara = 0;
+		while (bloques < 6) {
+			while (vueltas >= compara) {
+				System.out.print(asteriscos);
+				vueltas--;
+			}
+			System.out.println();
+			bloques++;
+			vueltas = 5 - bloques;	
+		}
+		
+		
+		
+	}
+
+}
