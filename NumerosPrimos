@@ -1,0 +1,38 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class NumPrimos {
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner (System.in);
+		
+		int num, divisor;
+		System.out.println("Escribe un número para saber si es primo o no");
+		num=scanner.nextInt();
+		divisor=num-1;
+		if (num<=0) {
+			System.out.println("Dame un número entero");
+			num=scanner.nextInt();
+		}
+		
+		else {
+			System.out.println("Calculando...");
+		}
+		scanner.nextLine();
+		while (divisor>1) {
+			if (num%divisor==0) {
+				System.out.println("No es primo");
+				break;
+			} 
+			
+			if (num%divisor!=0) {
+				divisor=divisor-1;
+				if (divisor==1) {
+					System.out.println("Es primo");
+				} 
+			} 
+			
+		}
+	}
+
+}
