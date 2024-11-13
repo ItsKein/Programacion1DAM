@@ -1,0 +1,33 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class MayorAMenor {
+	
+	public static void main(String[] args) {
+
+				int num1, num2, num3;
+				Scanner scanner=new Scanner (System.in);
+				System.out.println ("Introduzca tres números para ordenar de mayor a menor");
+				num1=scanner.nextInt();
+				num2=scanner.nextInt();
+				num3=scanner.nextInt();
+				if 	(num1>num2 && num1>num3 && num2>num3 && num2<num1){
+					System.out.println("El primer número es "+num1);
+					System.out.println("El segundo número es "+num2);
+					System.out.println("El tercer número es "+num3);
+				} else {
+					if (num2>num1 && num2>num3 && num1>num3 && num1<num2){
+						System.out.println("El primer número es "+num2);
+						System.out.println("El segundo número es "+num1);
+						System.out.println("El tercer número es "+num3);
+					} else {
+						if (num3>num1 && num3>num2 && num2>num1 && num2<num3){
+							System.out.println("El primer número es "+num3);
+							System.out.println("El segundo número es "+num2);
+							System.out.println("El tercer número es "+num1);
+						}
+					}
+				}
+	}
+
+}
+
