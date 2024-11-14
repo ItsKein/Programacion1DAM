@@ -1,0 +1,20 @@
+package hacer_en_casa;
+
+public class IntercambioDeVariables {
+	
+	public static void main(String[] args) {
+			
+		int a=1, b=2;
+		
+		System.out.println("El valor de a es: " + a);
+		System.out.println("El valor de b es: " + b);
+		
+		int c=0; 
+		c = b;
+		b = a;
+		a = c;
+		
+		System.out.println("Ahora el valor de a es: " + a);
+		System.out.println("Y el valor de b es: " + b);
+	}
+}
