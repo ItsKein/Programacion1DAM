@@ -1,0 +1,25 @@
+package hacer_en_casa;
+import java.util.Scanner;
+public class NumerosEntrada {
+	
+	public static void main(String[] args) {
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Escribe un número:");
+		int a = scanner.nextInt();
+		int suma=a;
+		
+		while (a!=0) {
+			System.out.println("Escribe un número para sumarlo al total. Pulsa 0 para terminar.");
+			a = scanner.nextInt();
+			suma+=a;
+			System.out.println("Total:"+ suma);
+		}
+		
+		scanner.close();
+		
+	}
+
+}
