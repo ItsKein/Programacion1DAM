@@ -4,7 +4,10 @@ import java.util.Scanner;
 public class PiedraPapelTijera {
 	
 	public static void main(String[] args) {
-			
+
+		//Es el juego de piedra papel o tijera, clasico.
+		//Te enfrentaras a la maquina (numero random) tras elegir entre las tres opciones posibles, indicandote tras esto las victorias o derrotas
+
 			
 		Scanner scanner = new Scanner(System.in);
 		Random rand = new Random();
