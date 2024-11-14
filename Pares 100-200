@@ -1,0 +1,17 @@
+package hacer_en_casa;
+
+public class Pares100a200 {
+	
+	public static void main(String[] args) {
+		
+		int a = 100;
+		
+		while (a<=200) {
+			if ((a%2) == 0)
+				System.out.println(a);
+			a++;
+		}
+
+	}
+
+}
